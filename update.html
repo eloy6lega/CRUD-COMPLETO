@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>C-RUD | UPDATE</title>
+<style>
+    body{
+        background-color: darkslategray;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 30px;
+    }
+    input{
+        border: 3.5px solid black;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+        width: 350px;
+        height: 30px;
+    }
+    .formulario{
+        max-width: 900px;
+        align-items: center;
+        margin: 0 auto;
+        font-size: 20px;
+        border: 3px solid black;
+        background-color: lightslategray;
+    }
+    .acepto{
+        display: inline-block;
+    }
+    .checkbox{
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+    }
+    .enviar{
+        height: 50px;
+        line-height: 20px;
+    }
+    .ciudad{
+        width: 350px;
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    a{
+        border-radius: 5px;
+        padding: 10px 7px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #333;
+        margin: 47%;
+    }
+
+</style>
+
+</head>
+<body>
+    <a href="index.php">INICIO</a>
+    <h2>Actualizar Registro</h2>
+    <div class="formulario">
+        <form action="update.php" method="post">
+            <input type="number" name="id" placeholder="Id del producto" required><br>
+            <input type="text" name="nombre" placeholder="Nombre nuevo" required><br>
+            <input type="number" step="0.1" name="unidades" placeholder="Unidades nuevas" required><br>
+            <input type="submit" value="ENVIAR" class="enviar"><br>
+        </form>
+    </div>
+</body>
+</html>
